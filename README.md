@@ -1,2 +1,48 @@
 # fox-node-cli
-A cli tool to work better with node, npm and yarn
+
+A cli tool to work better with node, npm and yarn.
+
+- [fox-node-cli](#fox-node-cli)
+  - [About the cli](#about-the-cli)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [help](#help)
+    - [`pkg-manager`](#pkg-manager)
+
+## About the cli
+
+I created this cli tool to make my life easier when working with node, npm and / or yarn. Its goal is to provide helpful commands to be used when developing or in automated processes, e.g. pipelines.
+
+This cli is part of a set of personal cli tools named as [fox-awesome-cli](https://github.com/sergiogc9/fox-awesome-cli) also developed by myself.
+
+## Installation
+
+**Prerequisites**: NodeJS (>=14.x tested only) installed.
+
+You can install it globally:
+
+`yarn global add fox-node-cli` or `npm install -g fox-node-cli`
+
+Or install locally:
+
+`yarn add fox-node-cli` or `npm install fox-node-cli`
+
+## Usage
+
+This cli tool can be used with some aliases: `foxnode`, `foxn`, `fnode` and `fn`. You can choose the one you prefer.
+
+The usage is:
+
+`foxnode <command> [options]`
+
+#### help
+
+You can see some information and the available commands using the help option or not using any command:
+
+`foxnode` or `foxnode -h`
+
+#### `pkg-manager`
+
+Checks the node package manager used in the current directory (and in its parents). Only works with `npm` and `yarn`.
+
+Possible return values: `yarn`, `npm` or `unknown`
