@@ -49,6 +49,8 @@ jobs:
             ${{ runner.os }}-
       - name: Install dependencies
         run: yarn install --ignore-scripts --frozen-lockfile
+      - name: Build
+        run: yarn build
       - name: Publish to NPM
         if: contains(github.ref, 'master')
         run: yarn foxnode publish
