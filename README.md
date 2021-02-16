@@ -8,6 +8,7 @@ A cli tool to work better with node, npm and yarn.
   - [Usage](#usage)
     - [help](#help)
     - [`pkg-manager`](#pkg-manager)
+    - [`publish`](#publish)
 
 ## About the cli
 
@@ -46,3 +47,13 @@ You can see some information and the available commands using the help option or
 Checks the node package manager used in the current directory (and in its parents). Only works with `npm` and `yarn`.
 
 Possible return values: `yarn`, `npm` or `unknown`
+
+#### `publish`
+
+Publishes the package in current project **only if current version is not already published** in the registry.
+
+Command arguments:
+
+- `-h, --help`: See help section.
+- `-u, --update`: Updates the package version before publishing. See help the options available.
+- `-p, --push`: Pushes the changes to remote. It should be done if an update is done to keep consistency.

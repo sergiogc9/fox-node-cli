@@ -2,6 +2,7 @@ import yargs from 'yargs';
 
 import defaultHandler from 'commands/default';
 import pkgManager from 'commands/pkg-manager';
+import publish from 'commands/publish';
 import pkg from '../package.json';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-expressions
@@ -18,4 +19,5 @@ yargs(process.argv.slice(2))
 				.usage('Usage: fn <command> [options]'),
 		defaultHandler
 	)
-	.command(pkgManager.name, pkgManager.description, pkgManager.config, pkgManager.handler).argv;
+	.command(pkgManager.name, pkgManager.description, pkgManager.config, pkgManager.handler)
+	.command(publish.name, publish.description, publish.config, publish.handler).argv;

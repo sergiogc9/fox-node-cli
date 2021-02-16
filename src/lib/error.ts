@@ -1,5 +1,6 @@
-import chalk from 'chalk';
 import shell from 'shelljs';
+
+import log from 'lib/log';
 
 /**
  * Throw example without message:
@@ -12,7 +13,7 @@ const catchError = (fn: (...args: unknown[]) => unknown) => {
 	try {
 		fn();
 	} catch (e) {
-		if (e.message) console.error(chalk.redBright(`⚠️ ${e.message}`));
+		if (e.message) log.error(`⚠️ ${e.message}`);
 		shell.exit(e.code || 1);
 	}
 };
