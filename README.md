@@ -1,5 +1,8 @@
 # fox-node-cli
 
+![](https://badgen.net/npm/v/fox-node-cli?icon=npm&label)
+![](https://github.com/sergiogc9/fox-node-cli/workflows/Github%20Pipeline/badge.svg?branch=master)
+
 A cli tool to work better with node, npm and yarn.
 
 - [fox-node-cli](#fox-node-cli)
