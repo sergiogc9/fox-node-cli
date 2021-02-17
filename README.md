@@ -5,6 +5,8 @@
 
 A cli tool to work better with node, npm and yarn.
 
+⚠️ _DEPRECATED:_ this cli tool has been merged with other cli tools in [fox-awesome-cli](https://www.npmjs.com/package/fox-awesome-cli). Use that one instead.
+
 - [fox-node-cli](#fox-node-cli)
   - [About the cli](#about-the-cli)
   - [Installation](#installation)

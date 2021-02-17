@@ -2,7 +2,7 @@
 	"name": "fox-node-cli",
 	"version": "0.0.1",
 	"description": "Node, npm and yarn command line tool",
-	"repository": "git://github.com/sergiogc9/fox-git-cli.git",
+	"repository": "git://github.com/sergiogc9/fox-node-cli.git",
 	"author": "Sergio Gómez Cosgaya (sergiogcosgaya@gmail.com)",
 	"files": [
 		"bin",
